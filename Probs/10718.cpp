@@ -1,5 +1,7 @@
 #include <cstdio>
 
+
+
 int main(){
 	unsigned int N, L, U;
 
@@ -9,6 +11,14 @@ int main(){
 		mask -= 1;
 
 		int M = ~N & mask;
+
+		int add, subs = 1;
+		while (M < L){
+			add = 1;
+			while (M + (add << 1) < U) add = add << 1;
+			M += add;
+		}
+
 		printf("%d\n", M);
 	}
 
