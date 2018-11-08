@@ -1,3 +1,7 @@
+/*
+* Búsqueda binaria en arreglo
+*/
+
 #include <cstdio>
 
 int binary(int A[], int E, int min, int max){

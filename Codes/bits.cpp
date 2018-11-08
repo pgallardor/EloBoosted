@@ -1,3 +1,7 @@
+/*
+* Bitmask y obtención de combinaciones con bitshift
+*/
+
 #include <cstdio>
 using namespace std;
 
